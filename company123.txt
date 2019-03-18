@@ -1,0 +1,78 @@
+{"company": [
+    {
+        "department": [
+            {
+                "name": "Development",
+                "depId": "1",
+                "employee": [
+                    {
+                        "empId": "001",
+                        "lastname": "Washington",
+                        "firstname": "George",
+                        "birthDate": "February 22, 1732",
+                        "position": "First US President",
+                        "skills": {
+                            "skill": [
+                                "Powers of persuasion",
+                                "Ability to unify",
+                                "Empowering others"
+                            ]
+                        },
+                        "managerId": 0
+                    },
+                    {
+                        "empId": "002",
+                        "lastname": "Adams",
+                        "firstname": "John",
+                        "birthDate": "October 30, 1735",
+                        "position": "Second US President",
+                        "skills": {
+                            "skill": [
+                                "A great communicator",
+                                "Successful lawyer"
+                            ]
+                        },
+                        "managerId": 1
+                    }
+                ]
+            },
+            {
+                "name": "Accounting",
+                "depId": "2",
+                "employee": [
+                    {
+                        "empId": "003",
+                        "lastname": "Jefferson",
+                        "firstname": "Thomas",
+                        "birthDate": "April 13, 1743",
+                        "position": "Third US President",
+                        "skills": {
+                            "skill": [
+                                "Sense of Justice",
+                                "Great understanding of history and politics",
+                                "Open mind for learning",
+                                "Follower of truth and reason"
+                            ]
+                        },
+                        "managerId": 1
+                    },
+                    {
+                        "empId": "004",
+                        "lastname": "Madison",
+                        "firstname": "James",
+                        "birthDate": "March 16, 1751",
+                        "position": "Fourth US President",
+                        "skills": {
+                            "skill": [
+                                "Knowledge of constitutionalism",
+                                "Critical thinking"
+                            ]
+                        },
+                        "managerId": 3
+                    }
+                ]
+             }
+          ]
+       }
+    ]
+ }
