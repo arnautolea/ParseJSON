@@ -10,40 +10,44 @@ public class CreateJSONsimple {
 
 @SuppressWarnings("unchecked")
 public static void main(String[] args) {
-
-	JSONObject company = new JSONObject();
-	JSONObject department = new JSONObject();
-    JSONArray depArray = new JSONArray();
-	JSONObject depDescription = new JSONObject();
-    JSONArray empArray = new JSONArray();
-    JSONObject empDescription = new JSONObject();
-    JSONObject skills = new JSONObject();
-    JSONArray skillArray = new JSONArray();
-  
- 
+	
+    JSONObject company = new JSONObject();
+   
+    JSONObject department = new JSONObject();
     company.put("company", department);
-    
+ 
+    JSONArray depArray = new JSONArray();
     department.put("department", depArray);
     
+    JSONObject depDescription = new JSONObject();
+    depDescription.put("name","Development");
+    depDescription.put("depId","1");
+ 
     depArray.add(depDescription);
-    depDescription.put("-name","Development");
-    depDescription.put("-depId","1");
+     
+    JSONArray empArray = new JSONArray();
     depDescription.put("employee", empArray);
-    
-    empArray.add(empDescription);    
-    empDescription.put("-empId", "001");
+      
+    JSONObject empDescription = new JSONObject();
+    empDescription.put("empId", "001");
     empDescription.put("lastname", "Washington");
     empDescription.put("firstname", "George");
     empDescription.put("birthDate", "February 22, 1732");
     empDescription.put("position", "First US President");
+    empDescription.put("managerId", "0");
+    
+    empArray.add(empDescription);
+    
+    JSONObject skills = new JSONObject();
     empDescription.put("skills", skills);
     
-    skills.put("skill", skillArray);
+    JSONArray skillArray = new JSONArray();
     skillArray.add("Powers of persuasion");
     skillArray.add("Ability to unify");
     skillArray.add("Empowering others");
-    empDescription.put("managerId", "0");
-      
+    
+    skills.put("skill", skillArray);
+    
 
     try (FileWriter file = new FileWriter("kompashka.json")) {
 
@@ -55,7 +59,5 @@ public static void main(String[] args) {
     }
 
     System.out.print(company);
-
 }
-
 }
