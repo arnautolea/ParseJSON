@@ -18,7 +18,7 @@
                                 "Empowering others"
                             ]
                         },
-                        "managerId": 0
+                        "managerId": "0"
                     },
                     {
                         "empId": "002",
@@ -32,7 +32,7 @@
                                 "Successful lawyer"
                             ]
                         },
-                        "managerId": 1
+                        "managerId": "001"
                     }
                 ]
             },
@@ -54,7 +54,7 @@
                                 "Follower of truth and reason"
                             ]
                         },
-                        "managerId": 1
+                        "managerId": "001"
                     },
                     {
                         "empId": "004",
@@ -68,7 +68,7 @@
                                 "Critical thinking"
                             ]
                         },
-                        "managerId": 3
+                        "managerId": "003"
                     }
                 ]
              }
