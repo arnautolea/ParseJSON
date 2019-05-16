@@ -1,5 +1,4 @@
-{"company": [
-    {
+{"company": {
         "department": [
             {
                 "name": "Development",
@@ -69,10 +68,9 @@
                             ]
                         },
                         "managerId": "003"
-                    }
-                ]
-             }
-          ]
-       }
-    ]
+                   }
+               ]
+           }
+        ]
+     }
  }
