@@ -39,7 +39,6 @@ public class ParseJSON {
 				System.out.println("depId: " + depId);
 
 				JSONArray employee = (JSONArray) eachDep.get("employee");
-
 				//Loop employees and get values for each employee
 				for (int e = 0; e < employee.size() ; e++) {
 					System.out.println("\n-------employee-------");
