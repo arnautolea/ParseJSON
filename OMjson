@@ -1,0 +1,44 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+public class OrangeJson {
+
+	public static void main(String[] args){
+		
+		JSONParser parser = new JSONParser();
+		try {
+			Object obj = parser.parse(new FileReader("Orange.json")); 
+			JSONObject jsonObject = (JSONObject) obj;
+			JSONObject tests = (JSONObject)jsonObject.get("tests");
+			System.out.println(tests);
+			System.out.println("smoke:");
+			JSONArray smoke = (JSONArray) tests.get("smoke");
+			@SuppressWarnings("unchecked")
+			Iterator<String> iterator = smoke.iterator();
+				while (iterator.hasNext()) {
+					System.out.println(iterator.next());
+				}
+			JSONObject reg = (JSONObject)tests.get("lightRegression");
+			System.out.println("lightRegression:");
+			String reg1 = (String) reg.get("1");
+			System.out.println("1: " + reg1);
+			String reg2 = (String) reg.get("2");
+			System.out.println("2: " + reg2);
+			String reg3 = (String) reg.get("3");
+			System.out.println("3: " + reg3);
+		} catch (FileNotFoundException e) {
+        	System.out.println("File?");
+        } catch (IOException e1) {
+        	System.out.println("Something went wrong.");
+        } catch (ParseException e2) {
+        	System.out.println("Parsing don't parse O_o");
+        }	
+	}			
+}
